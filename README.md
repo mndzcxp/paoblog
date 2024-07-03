@@ -13,4 +13,4 @@ Este proyecto es un _**diseño de página web**_, creado puramente con HTML5. Se
 
 ### 👁️ Vista previa del proyecto
 ![Demo](/img/proyecto2.png)
-🔗 [link de vista previa](https://horariodesign.vercel.app/)
+🔗 [link de vista previa](https://horariodesign.vercel.app/](https://paoblog-paola-mendezs-projects.vercel.app/)
