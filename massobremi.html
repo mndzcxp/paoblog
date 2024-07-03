@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Mi blog</title>
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+            
+            input:invalid{
+                border:2px solid purple;
+            }
+            input:valid{
+                border:2px solid pink;
+            }
+          form {
+                margin: 0 auto;
+                width: 350px;
+  
+                padding: 2em;
+                border: 4px solid #A665C4;
+                border-radius: 2em;
+            }
+
+          form div + div {
+                margin-top: 1em;
+            }
+
+          label {
+  
+                display: run-in;
+                width: 100px;
+            }
+
+          input, 
+          textarea {
+                font: 1em sans-serif;
+
+                width: 300px;
+                box-sizing: border-box;
+
+                border: 2px solid #A665C4;
+            }
+
+          input:focus, 
+          textarea:focus {
+ 
+                border-color: #A665C4;
+            }
+
+          textarea {
+  
+                vertical-align: top;
+
+                height: 5em;
+            }
+
+
+          body{
+                background-image: url("img/fondo1.jpg");
+                font-family: 'Assistant', sans-serif;
+            }
+
+          h1{
+                font-family: 'Fredoka One', cursive;
+                font-size: 60px;
+                text-align: center;
+                color: #A665C4;
+            }
+
+          p{
+                font-size: 25px;
+                font-family: 'Assistant', sans-serif;
+                text-align: center;
+            }
+
+          #notificaciones{
+                 width: 30px;
+            }
+          
+          #sexo{
+                  width: 30px;
+            }
+
+          .none{
+                  margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>¿Quieres saber más sobre mí?</h1>
+      <p>
+        Si gustas saber más sobre mí, te invito a llenar el siguiente formulario para ponernos en contacto.
+      </p>
+        <br>
+        <form name="datosPersonales" action="agradecimiento.html" method="post">
+            
+            <label for="nombre">Nombre completo:</label>
+            <input id="nombre" name="nombre" type="text" required placeholder="Ej. Méndez Cab Paola Guadalupe" maxlength="100">
+            <br>
+
+            <label for="fechaNacimiento">
+            Fecha de Nacimiento:</label>
+            <input id="fechaNacimiento" type="date" name="fechaNacimiento">
+            <br>
+            
+            <label for="sexo">Sexo:</label> <br>
+            <div class="none">
+            <input type="radio" id="sexo" name="sexo">Femenino<br>
+            <input type="radio" id="sexo" name="sexo">Masculino<br>
+            <input type="radio" id="sexo" name="sexo">Prefiero no decirlo<br>
+          </div>
+          
+            <br>
+            <label for="edadInputId">Edad:</label>
+            <br>
+            <input type="range" min="1" max="100" step="1.0" name="edadInputId" id="edadInputId" value="16" oninput="edadOutputId.value = edadInputId.value">
+            <output name="edadOutputName" id="edadOutputId">16</output>
+
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input name="email" id="email" type="email" required placeholder="tucorreo@gmail.com" size="40">
+            <br>
+
+            <label for="tel">Número telefónico:</label>
+            <input type="tel" id="tel" name="tel" placeholder="999 123 1234">
+            <br>
+
+            <label for="notificaciones">¿Desea recibir notificaciones en su correo electrónico?</label> <br>
+            <div class="none">
+            <input type="radio" id="notificaciones" name="notificaciones">Sí<br>
+            <input type="radio" id="notificaciones" name="notificaciones">No<br>
+          </div>
+            <br>
+
+            <input name="Aceptar" type="submit">
+  
+            <input type="reset" name="Cancelar" >
+        
+        </form>
+
+            
